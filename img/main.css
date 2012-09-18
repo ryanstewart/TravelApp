@@ -1,0 +1,143 @@
+body {
+	background: url('background_320x480.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#header {
+	width: 320px;
+	font-family: cursive;
+	text-align: center;
+	font-size: 20pt;
+}
+
+#back {
+	left: 0px;
+	width: 75px;
+	height: 58px;
+}
+
+#back.visible {
+	display: block;
+}
+
+#mainslideholder {
+	position: relative;
+	overflow: hidden;
+	width: 320px;
+	height: 350px;
+}
+
+/* Photo start */
+#photoslideholder {
+	position: absolute;
+	overflow: hidden;
+	width: 320px;
+	height: 350px;
+	left: 0px;
+	-webkit-transition: left 0.5s linear;
+}
+
+#photoslideholder.animate {
+	left: -320px;
+}
+
+#takephoto {
+	position: absolute;
+	width: 320px;
+	height: 350px;
+	left: 0px;
+	-webkit-transition: left 0.5s linear;
+}
+
+#takephoto.animate {
+	left: -320px;
+}
+
+#camerabutton {
+	background: url('camera_button.png');
+	width:300px;
+	height: 196px;
+	padding-top: 1px;
+	-webkit-transition: display 0.5 ease-in;
+}
+
+/* Image detail */
+
+#photodetail {
+	position: absolute;
+	width: 320px;
+	height: 350px;
+	left: 320px;
+	-webkit-transition: left 0.5s linear;
+}
+
+#photodetail.animate {
+	left:0px;
+}
+
+#photo {
+	align: center;
+	width: 210px;
+	height: 280px;
+	margin-left: 40px;
+	padding: 10px 5px 30px 15px;
+	border: 1px solid #BFBFBF;
+	-webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+	-webkit-transform: rotate(3deg);
+	background-color: #fff;	
+	-webkit-transition: display 0.5 ease-in;
+}
+
+
+#image {
+	width:200px;
+	height:267px;
+}
+
+#imagetitle {
+	margin-top: 0px;
+	text-align: center;
+	font-family: cursive;
+}
+
+#imagetitle.hidden {
+	display: none;
+}
+
+input {
+	margin-top:0px;
+	width: 90%;
+	font-family: cursive;
+	font-size: 14pt;
+}
+
+
+/** Photo List start **/
+#photolist {
+	position: absolute;
+	overflow: hidden;
+	width: 320px;
+	height: 350px;
+	left: 320px;
+	-webkit-transition: left 0.5s linear;	
+}
+
+#photolist.animate {
+	left: 0px;
+}
+
+
+
+/** Footer start **/
+#footer {
+	margin-left:50px;
+	position: absolute;
+	font-family: cursive;
+	bottom: 0px;
+}
+
+#footer a {
+	color: #fff;
+	text-decoration: none;
+}

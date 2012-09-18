@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+      <link rel="stylesheet" href="css/index.css" />
+
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+  </head>
+ <body>
+	<div id="header">Travel Scrapbook</div> 
+	<div id="mainslideholder">
+		<div id="photoslideholder">
+			<div id="takephoto">
+				<div id="camerabutton" onclick="getCamera();">
+
+				</div>
+		 	</div>
+			<div id="photodetail">
+				<div id="photo" class="hidden">
+					<img src="" id="image">
+					<h2 id="imagetitle" onclick="titleclick()">Image Title</h2>
+				</div>
+		  	</div>
+	 	</div>
+		<div id="photolist">
+			<ul>
+				<li>Photo 1</li>
+				<li>Photo 2</li>
+				<li>Photo 3</li>
+				<li>Photo 4</li>
+			</ul>
+		</div>
+	  </div>
+	  <div id="footer">
+	  	<a href="#" onclick="app.showCamera()"><img src="img/take_photo_off.png" width="77" height="75"></a>
+	  	<a href="#" onclick="app.showPhotoList()"><img src="img/photo_list_off.png" width="116" height="75"></a>
+	  </div>
+  </body>
+</html>
